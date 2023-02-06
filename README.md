@@ -10,7 +10,7 @@ https://makeyouruno.arduino.cc/makeyouruno/module/projects/lesson/04-make-your-s
 
 CHANGELOG: <br>
 05FEB2022: Unused variables removed, getNote() updated, comments updated. <br>
-06FEB2022: Unused LED-related code removed. <br><br>
+06FEB2022: Unused LED-related code removed, comments updated. <br><br>
 
 TODO: <br>
 - keep improving comments <br>
