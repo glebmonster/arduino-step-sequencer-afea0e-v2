@@ -1,5 +1,5 @@
 # arduino-step-sequencer-afea0e-v2
-A re-work/polishing project of eEdizon's arduino-step-sequencer-afea0e <br><br>
+The project's objective is to adjust eEdizon's arduino-step-sequencer-afea0e to Arduino's Make Your Uno kit.<br><br>
 
 Code originally from  <br>
 https://create.arduino.cc/projecthub/eEdizon/arduino-step-sequencer-afea0e <br>
