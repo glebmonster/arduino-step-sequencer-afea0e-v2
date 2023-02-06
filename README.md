@@ -13,8 +13,7 @@ CHANGELOG: <br>
 06FEB2022: Unused LED-related code removed. <br><br>
 
 TODO: <br>
-- improve comments <br>
-- review var types <br>
+- keep improving comments <br>
 - review debug code <br><br>
 
 IDEAS: <br>
