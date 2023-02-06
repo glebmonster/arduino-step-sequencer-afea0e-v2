@@ -9,7 +9,7 @@ Project originally from <br>
 https://makeyouruno.arduino.cc/makeyouruno/module/projects/lesson/04-make-your-synth-shield <br><br>
 
 CHANGELOG: <br>
-05FEB2022: Unused variables removed, getNote function updated, comments updated. <br>
+05FEB2022: Unused variables removed, getNote() updated, comments updated. <br>
 06FEB2022: Unused LED-related code removed. <br><br>
 
 TODO: <br>
