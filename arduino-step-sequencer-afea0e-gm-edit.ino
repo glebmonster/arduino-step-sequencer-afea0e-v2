@@ -17,43 +17,43 @@
  * The LED-related parts have been removed, as they are not utilised in the Make Your Uno kit.
  */
 
-const byte speaker = 9; // Speaker pin
-bool debug = false;     // Used to print values to Serial Monitor
-//bool isOn = false;    // Checks if the device should work or not // Currently not in use
-long counter = 0;       // Used for speed
-long tempo;             // Used for reading the speed
-int lowFreq = 10;       // The lower frequency boundary
-int highFreq = 2000;    // The higher frequency boundary
-int pattern = 0;        // Current potentiometer
-unsigned int note;      // Note that will be played
+const byte speaker = 9;       // Speaker pin
+const bool debug = false;     // Set to True to print values to Serial Monitor
+const short lowFreq = 10;     // The lower frequency boundary
+const short highFreq = 2000;  // The higher frequency boundary
+short counter = 0;            // Used for speed
+short tempo = 0;              // Used for reading the speed
+byte pattern = 0;             // Current potentiometer
+short note = 0;               // Note that will be played
 
-int getNote(int pattern) {  
+short getNote(byte pattern) {  
   // Get notes for specific patterns
   note = map(analogRead(pattern+14), 0, 1023, lowFreq, highFreq);
   return note;
 }
 
 void setup() {
+  Serial.begin(9600);
 }
 
 void loop() {
-  tempo = map(analogRead(A4), 0, 1023, 4000, 100); // Reverse mapping
-  if (tempo < 3900) { // Enter if speed still acceptable
+  tempo = map(analogRead(A4), 0, 1023, 4000, 100);  // Reverse mapping
+  if (tempo < 3900) {                               // Enter if speed still acceptable
     if(counter > tempo) {
       if(debug) {
         Serial.println(pattern);
       }
       noTone(speaker);
-      counter = 0;   
-      note = getNote(pattern);    
-      pattern = (pattern + 1) % 4;
+      note = getNote(pattern);
       if(note > lowFreq + 10) {
         tone(speaker, note);
       }
+      counter = 0;
+      pattern = (pattern + 1) % 4;
     }
     counter++;
-  } else { // Stopped on a specific potentiometer
-    note = map(analogRead(pattern), 0, 1023, lowFreq, highFreq);
+  } else {                      // Stopped on a specific potentiometer
+    note = getNote(pattern);
     if (note > lowFreq + 10) {
       tone(speaker, note);
     } else {
