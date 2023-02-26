@@ -1,11 +1,8 @@
 # arduino-step-sequencer-afea0e-v2
-The project objective is to adjust eEdizon's arduino-step-sequencer-afea0e code to Arduino Make Your Uno kit.<br>
+A refactoring of eEdizon's arduino-step-sequencer-afea0e for Arduino Make Your Uno kit.<br>
 <br>
-Code originally from  <br>
-https://create.arduino.cc/projecthub/eEdizon/arduino-step-sequencer-afea0e <br>
+Links to the original projects:  <br>
 https://www.hackster.io/eEdizon/arduino-step-sequencer-afea0e <br>
-Licensed under © GPL3+ <br>
-Project originally from <br>
 https://makeyouruno.arduino.cc/makeyouruno/module/projects/lesson/04-make-your-synth-shield <br>
 <br>
 CHANGELOG: <br>
