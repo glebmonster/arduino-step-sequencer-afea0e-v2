@@ -7,14 +7,11 @@
  * Project originally from 
  * https://makeyouruno.arduino.cc/makeyouruno/module/projects/lesson/04-make-your-synth-shield
  * 
- * Additional comment:
  * This is an updated version of the projects listed above. 
  * An assembled synth must be horizontally oriented, like this: [:::O]
  * The four knobs on the left adjust audio frequencies, one note each (connected to A0-A3).
- * Together they make an arpeggio, playing in a loop.
  * The top right potentiometer adjusts the volume of the speaker (connected to D9).
  * The bottom right potentiometer adjusts the arpeggiator tempo (connected to A4).
- * The LED-related parts have been removed, as they are not utilised in the Make Your Uno kit.
  */
 
 const byte speaker = 9;       // Speaker pin
