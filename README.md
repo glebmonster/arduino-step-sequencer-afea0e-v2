@@ -10,7 +10,7 @@ CHANGELOG: <br>
 06FEB2022: Unused LED-related code removed, comments updated. <br>
 10FEB2022: Data types reviewed, minor changes made to the code, including debug-related. <br>
 26FEB2022: Comments and readme update. No changes to the code.
-<br>
+<br> <br>
 TODO: <br>
 - review the main loop <br>
 - review debug code <br>
